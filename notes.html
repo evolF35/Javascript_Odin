@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //8 basic data types in Javascript
+        //dynamically typed -- put any type in a variable
+
+        // Numbers, { Infinity NaN} numbers are safe, script will never stop
+
+        // BigInt, bigger numbers >2**53, used for cryptography and mathematics
+        // put n at end
+
+        const bigInt = 22222222232323474831957894357932412332n;
+
+        //String 
+        let str = "Hello";
+        let str2 = 'Single quotes';
+        let phrase = `backticks ${str} ${str2}`;
+        //${} means you can embed
+
+        // backticks, ` , are extened functionality, they allow us to embed variables by ${}
+
+        let junior = `extended = ${6+3}`;
+
+        // There is no character type, no char 
+
+        // Boolean - true and false
+        let nameField = true;
+        let basedField = false;
+
+        let isLesser = 4 < 7;
+        // result of comparisons too
+
+        // null
+        // special value that represents nothing, empty, or unknown
+
+        let age = null;
+
+        // undefined
+        // meaning is : value not assigned
+
+        let hat;
+        console.log(hat);
+        // returns undefined
+
+        //Normally assign null, undefined is just default initial values for variables
+
+        // Object 
+        // Special, other types are called primitive because they can only contain a single thing
+        // objects are used to store collections of data and more complex entities
+
+        //typeof operator - returns the type of the arguement.
+
+        // typeof null - mistake that is an error Javascript deals with
+
+        // 8 data types in JavaScript
+        // 7 primitive types  
+
+
+
+        // template literal for strings is `
+
+        //Strings more depth
+
+        // Javascript treats primitives as objects when executing methods and properties
+
+        // .length returns the length of the string
+
+        let text = "fierjfoerijf";
+        console.log(text);
+
+        // 3 methods for extracting a part of a string
+        // slice, substring, substr
+
+        // slice extracts a part and returns 
+
+        let strer = "frfrrf";
+        let part = strer.slice(2,4);
+        
+        // Javascript counts from position zero
+
+        // substing() is similar to slice()
+        // start and end values less than 0 are treated as 0 in substring()
+
+        // substr() is similar to slice too, except second parameter specifies the length
+
+        // replace returns new string and finds first     
+        
+        //toUpperCase and toLowerCase
+
+        // all string methods return a new string, don't change old
+
+        // Strings are immutable
+
+        // 3 methods for extracting strinf characters, 
+        // charAt, charCodeAt, property access []
+
+        // can convert string into an array by split
+
+        
+
+    </script>
+
+
+</body>
+</html>
