@@ -166,16 +166,16 @@
 
         let accessAllowed = (age > 19) ? true : false;
 
-        let result = condition ? value1 : value2;
+        //let result = condition ? value1 : value2;
 
 
         // question mark operator, shorter simpler way
 
-        let boox = (a + b < 4) ? 'Below' :   'over';
+        //let boox = (a + b < 4) ? 'Below' :   'over';
 
-        let message = (login == 'Employee') ? 'Hello' : (login
-        == 'Director') ? 'Greetings' : (login == '') ?
-        'No login' : '';
+        //let message = (login == 'Employee') ? 'Hello' : (login
+        //== 'Director') ? 'Greetings' : (login == '') ?
+        //'No login' : '';
         
         switch (4 < 5) {
             case true:
@@ -185,6 +185,96 @@
             default:
                 break;
         }
+
+        function random(number=6) {
+            return 5;
+        }
+
+        //anonymous function
+
+        //arrow function
+
+        // parameters are the iterms listed between the parenhteses in the 
+        // function declaration 
+
+        //function arguements are the actual values we pass
+
+        // a variable declared inside a function is only visible inside that function
+        // can also use out variables too
+
+        //global variables, good practice to minimize, useful for project-level data
+
+        // function always gets a copy of the value
+
+        // if arguement is not provided , value becomes undefined
+        // if you want a default value , have equals
+
+        /*"get…" – return a value,
+        "calc…" – calculate something,
+        "create…" – create something,
+        "check…" – check something and return a boolean, etc.*/
+
+
+ let sayHi = function() {
+    alert("Hello");
+ };
+
+// a function is a special value
+// ie sayHi can be alerted
+
+let func = sayHi;
+
+//func can be called and get same result
+
+//callback functions
+// pass a function and expect it to be called back
+
+// A Function expression is created when the execution reaches it and is unsable only from that moment
+
+// A function declaration can be called earlier tham it is defined
+
+// A function declaration is only visible inside the code block in which it resides
+
+// but with function expression its possible because of the variable property
+
+
+
+//func();
+
+
+// Arrow functions
+
+let gung = (arg1,arg2,argN) => expression;
+let gung2 = function(arg1,arg2,argN) {return expression;};
+
+// shorter version
+
+let summation = (a,b) => a + b;
+
+
+
+let add7 = number => number + 7;
+let multiply = (num1,num2) => num1*num2;
+
+function capitalize(highstrung) {
+    if(typeof(highstrung) != (typeof('a')))
+    {
+        alert("nope");
+        return;
+    }
+    let CAPs = highstrung.toUpperCase();
+    let result;
+    if(CAPs.substr(0,1) < 'A')
+    {
+        result = capitalize(CAPs.substr(1));
+    }
+    else{
+        result = CAPs.substr(0,1);
+    }
+
+
+    return(result);
+}
 
 
     </script>
