@@ -381,6 +381,103 @@ for(let i = 1; i <= answer; i++) {
     }
 
 
+    //Arrays
+
+    // an array can hold many values, you can access the values by
+    //referring to an index number
+    // you can have objects, functions, arrays in an array
+
+    const firstArray = [1,2,3];
+    firstArray[3] = 4;
+
+
+    // access array element by index number [0]
+
+    // arrays are special type of objects
+
+    firstArray.length;
+    firstArray.sort();
+    firstArray.forEach();
+
+    firstArray.push(5);
+
+    // Javascript arrays always use numbered indexes, no named indexes
+    // arrays use numbered indexes
+    // onjects use named indexes
+
+
+    // use objects when you want the element names to be strings
+    // use arrays when you want element names to be numbers
+
+    //How to tell if array?
+    Arry.isArray(firstArray);
+
+    firstArray instanceof Array; 
+    //returns true if array
+
+
+
+    // how to convert to string?
+
+    firstArray.toString();
+
+    firstArray.join(" j ");
+    // adds  " j " between each element and thus makes it a string
+
+    // pop removes last element in array
+
+    let secondarray = [2,3,4,5,6];
+
+    secondarray.pop();
+
+    //shift(), removes first element and shifts other element to 
+    //lower index
+
+    secondarray.shift(); 
+    // returns value that was shifted out
+
+    secondarray.unshift(2);
+    // adds new elemnt to array at beginning and unshifts older elements
+    // returns new array length
+
+    //delete, delete elements, however leaves undefined holes
+
+    delete secondarray[0];
+    secondarray[0] = 2;
+
+
+    //concat() creates new array by merging existing arrays
+
+    const thridArray = firstArray.concat(secondarray,"dolphin");
+
+    //splice() - adds new items to an array. slice() slices out piece
+
+    thridArray.splice(2,0,"lemon","kiwi");
+    //2 = index of where to be added, 0 = how many elemnts to be removed
+    // rest is new elements added
+
+    //returns array with deleted items
+
+    thridArray.splice(2,1);
+    // removes third element without leaving a hole
+
+    thridArray.slice(1);
+    // slices out part starting from element 1
+    // creates new array
+
+    thridArray.slice(1,3);
+    //slices out part starting from element 1 to element 3
+
+
+    //automatic toString()
+    // automatically converts array to comma seperated string
+    // when a primitive value is expected
+
+    
+
+
+
+
 
 
     </script>
