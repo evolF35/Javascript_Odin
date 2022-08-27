@@ -473,11 +473,100 @@ for(let i = 1; i <= answer; i++) {
     // automatically converts array to comma seperated string
     // when a primitive value is expected
 
+
+    //LOOPS
+    //do same thing over and over again
+
+    // random(x) returns a whole number between 0 and x - 1;
+
+    const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+    for(const cat of cats){
+        console.log(cat);
+    }
+
+    // given collection cats, get the first item
+    //assign it to variable cat 
+    // then run the code within the loop
+
+    const catsUpper = cats.map(toUpper);
+    // map does something to each item and creates new collection
+    // create a new collection containing changed items
+
+    function lCat(cat) {
+        return cat.startsWith('L');
+}   
+
+    const filtered = cats.filtered(lCat);
+
+    // create new collection containing only items that match the condition
+
+    // for (initializer ;conditionl; final-expression)
+
+    // break statement, exitts the loop
+    // continue statement, skips to next iteration of the loop
+
+    // initializer
+    // while (condition) {
+    //     code to run 
+    //  final-expression }
+
+
+    // do while does at least one iteration
+    
+
+    // single execution is called an iteration
+        
+
+    // labelName:   ordinary break, breaks the inner loop
+    //
+
+    outer: for (let i = 0; i < 3; i++) {
+
+for (let j = 0; j < 3; j++) {
+
+  let input = prompt(`Value at coords (${i},${j})`, '');
+
+  // if an empty string or canceled, then break out of both loops
+  if (!input) break outer; // (*)
+
+  // do something with the value...
+}
+}
+
+alert('Done!');
+        
+    let num = 0;
+
+    do {
+        num = prompt("Input a number over 100 please",0);
+        } while(num < 100 && num);
+
+
+
+
+        // a numbr greater than 1 is called a prime,
+        // if it cannot be divided without a remainder
+        // by anyhting except 1 and itself
+
+        // n > 1 is a prime if it cant be evenly divided except 1 and n
+
+
+        function findPrimes(n){
+            nextPrime: for(let i = 2; i <= n; i++){
+                for(let j = 2; j < i; j++){
+                    if(i % j == 0) continue nextPrime;
+                }
+                console.log(i);
+            }
     
 
 
 
+        }
 
+
+    
 
 
     </script>
