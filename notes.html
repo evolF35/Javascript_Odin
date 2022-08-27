@@ -273,8 +273,114 @@ function capitalize(highstrung) {
     }
 
 
-    return(result);
+    return(result + highstrung.substr(1));
 }
+
+
+let lastLetter = gump => gump.substr(-1);
+
+/*Write a program that takes a user’s input and prints the numbers 
+from one to the number the user entered.
+ However, for multiples of three print Fizz instead of 
+ the number and for the multiples of five print Buzz. 
+ For numbers which are multiples of both three 
+ and five print FizzBuzz.*/
+
+
+    function fizzbuzz(numberInput) {
+        if(typeof(numberInput) != typeof(2)){alert("gib number"); return;}
+
+        let counter = 1;
+        while (counter <= numberInput) {
+
+            if((counter % 3 == 0) && (counter % 5 == 0)) {
+                console.log("FizzBuzz");
+                counter++;
+                continue;
+            }
+
+            if(counter % 5 == 0){
+                console.log("Buzz");
+                counter++;
+                continue;
+            }
+
+            if(counter % 3 == 0){
+                console.log("Fizz");
+                counter++;
+                continue;
+            }
+
+            console.log(counter);
+            counter++;
+        }
+        return;
+    }
+
+
+/*
+When a user inputs a number
+Loop from 1 to the enter number
+if the current number is divisable by 3, print fizz
+if the current number is divisable by 5, print buzz
+if divisible by 3 and 5, print fizzbuzz
+otherwise print the current number
+*/
+
+let answer = parseInt(prompt("Please enter a number that you want to Fizz Buzz with ;)"))
+
+for(let i = 1; i <= answer; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz")
+    }
+    if(i % 3 === 0) {
+        console.log('Fizz');
+    }
+    else if(i % 5 === 0) {
+        console.log('Buzz');
+    }
+    else{
+        console.log(i);
+    }
+
+}
+    
+
+    /*
+    When a user inputs a number
+    Loop from 1 to the inputted number
+    if divisible by 5 and 3 print fizzbuzz, continue
+    if divisible by 5 print buzz, continue
+    if divisble by 3 print fizz, continue
+    print current number
+    */
+
+    function googgo() {
+        let input = parseInt(prompt("Please input a number to fizzbuzz with"));
+        
+        for(let i = 1; i <= input; i++){
+            if(i % 5 === 0 && i % 3 === 0){
+                console.log("fizzbuzz");
+                continue;
+            }
+            else if(i % 5 === 0){
+                console.log("buzz");
+                continue;
+            }
+            else if(i % 3 ===0){
+                console.log("fizz");
+                continue;
+            }
+            else {
+                console.log(i);
+            }
+        }
+        return;
+
+    }
+
+
 
 
     </script>
